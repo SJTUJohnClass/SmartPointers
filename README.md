@@ -153,7 +153,7 @@
 
   ```cpp
    SharedPtr<std::string> ptr{new std::string{"hello"}};
-   std::cout << bool(ptr) << std::endl;  // output: true
+   std::cout << bool(ptr) << std::endl;  // output: 1 
   ```
 
 - 要求实现 `get()` 函数用以返回存储在类中的原始指针
@@ -376,3 +376,4 @@
 
 如有问题请联系本项目的发布者 `PhantomPhoenix`, 他的邮箱地址是: `logic_1729@sjtu.edu.cn`；负责人 `cyl06`，他的邮箱地址是:
 `ocwzazure@sjtu.edu.cn`。
+
