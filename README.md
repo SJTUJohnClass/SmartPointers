@@ -227,7 +227,7 @@
    WeakPtr<int> wp;
    SharedPtr<int> sp{new int{10}};
    wp = sp;
-   std::cout << bool(wp) << std::endl;  // output: true
+   std::cout << bool(wp) << std::endl;  // output: 1
   ```
 
 - 要求实现 `lock()` 函数用以转换 `weak_ptr` 为 `shared_ptr`。如果对象已被删除，则返回一个空的 `shared_ptr`。
@@ -376,4 +376,5 @@
 
 如有问题请联系本项目的发布者 `PhantomPhoenix`, 他的邮箱地址是: `logic_1729@sjtu.edu.cn`；负责人 `cyl06`，他的邮箱地址是:
 `ocwzazure@sjtu.edu.cn`。
+
 
