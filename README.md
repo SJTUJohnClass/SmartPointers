@@ -260,14 +260,6 @@
 
 - 要求实现 `use_count()` 函数用以返回指向当前的对象的所有 `shared_ptr` 实例数
 
-  ```cpp
-   SharedPtr<int> ptr1{make_shared<int>(10)};
-   std::cout << ptr1.use_count() << std::endl;  // output: 1
-   SharedPtr<int> ptr2{ptr1};
-   std::cout << ptr1.use_count() << std::endl;  // output: 2
-   std::cout << ptr2.use_count() << std::endl;  // output: 2
-  ```
-
 - 要求实现 `swap()` 函数，交换两个 `weak_ptr` 对象
 
   ```cpp
@@ -354,9 +346,9 @@
 
 对于 `Basic` 部分：
 
-`Unique_ptr`: 25 `pts`
+`Unique_ptr`: 30 `pts`
 
-`Shared_ptr`: 25 `pts`
+`Shared_ptr`: 30 `pts`
 
 `Weak_ptr`: 30 `pts`
 
@@ -376,5 +368,6 @@
 
 如有问题请联系本项目的发布者 `PhantomPhoenix`, 他的邮箱地址是: `logic_1729@sjtu.edu.cn`；负责人 `cyl06`，他的邮箱地址是:
 `ocwzazure@sjtu.edu.cn`。
+
 
 
